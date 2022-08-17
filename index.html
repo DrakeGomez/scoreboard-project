@@ -1,0 +1,36 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <style>@font-face {font-family: "Cursed Timer ULiL"; src: url(fonts/CursedTimerULiL.ttf);}</style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-column">
+                <h3>HOME</h3>
+                <div class="score-box">
+                    <h1 id="home-score"></h1>
+                </div>
+                <div class="btn-group">
+                    <button class="plus-btn" onclick="homePlusOne()">+1</button>
+                    <button class="plus-btn" onclick="homePlusTwo()">+2</button>
+                    <button class="plus-btn" onclick="homePlusThree()">+3</button>
+                </div>
+            </div>
+            <div class="score-column">
+                <h3>GUEST</h3>
+                <div class="score-box">
+                    <h1 id="guest-score"></h1>
+                </div>
+                <div class="btn-group">
+                    <button class="plus-btn" onclick="guestPlusOne()">+1</button>
+                    <button class="plus-btn" onclick="guestPlusTwo()">+2</button>
+                    <button class="plus-btn" onclick="guestPlusThree()">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="reset">
+            <button id="reset-btn" onclick="scoreReset()">RESET</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
